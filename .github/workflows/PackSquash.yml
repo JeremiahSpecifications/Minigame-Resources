@@ -22,10 +22,6 @@ jobs:
         working-directory: ./Packs
         run: chmod +x packsquash
 
-      - name: Squash
-        working-directory: ./Packs
-        run: java -jar Toolbox2.0_noupdater.jar --autoHash
-
       - name: Print things
         working-directory: ./Packs
         run: |
