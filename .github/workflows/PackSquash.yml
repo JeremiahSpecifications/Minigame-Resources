@@ -36,5 +36,5 @@ jobs:
       - name: Upload Packs
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.pack }}.zip
-          path: Packs/out
+          name: ${{ matrix.pack }}
+          path: Packs/out/${{ matrix.pack }}.zip
