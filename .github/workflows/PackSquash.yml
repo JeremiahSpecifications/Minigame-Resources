@@ -3,6 +3,9 @@ on: [push]
 
 jobs:
   PackSquash:
+    strategy:
+      matrix:
+        pack: [ vanilla, cartoon, chinese-mythology, city, fallout, fantasy, festive, greek-mythology, halloween, natural, plastic, steampunk,]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,16 +29,12 @@ jobs:
         working-directory: ./Packs
         run: |
           chmod +x packsquash
-          declare -a arr=("vanilla" "cartoon" "chinese-mythology" "city" "fallout" "fantasy" "festive" "greek-mythology" "halloween" "natural" "plastic" "steampunk")
           mkdir out
-          for x in "${arr[@]}"
-          do
-             printf "pack_directory = \"%s\"\noutput_file_path = \"out/%s.zip\"" "$x" "$x"> packsquash-options.toml
-            ./packsquash packsquash-options.toml
-          done
+          printf "pack_directory = \"%s\"\noutput_file_path = \"out/%s.zip\"" "${{ matrix.pack }}" "${{ matrix.pack }}"> packsquash-options.toml
+          ./packsquash packsquash-options.toml
 
       - name: Upload Packs
         uses: actions/upload-artifact@v4
         with:
-          name: Artifacts
+          name: ${{ matrix.pack }}.zip
           path: Packs/out
