@@ -27,7 +27,7 @@ jobs:
           do
             printf "pack_directory = \"%s\"\noutput_file_path = \"out/%s\"" "$x" "$x"> packsquash-options.toml
            ./packsquash packsquash-options.toml
-         done
+          done
 
       - name: Upload Packs
         uses: actions/upload-artifact@v4
