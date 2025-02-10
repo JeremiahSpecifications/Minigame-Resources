@@ -36,13 +36,7 @@ jobs:
           printf "pack_directory = \"%s\"\noutput_file_path = \"out/%s.zip\"" "${{ matrix.pack }}" "${{ matrix.pack }}"> packsquash-options.toml
           ./packsquash packsquash-options.toml
 
-      - name: Upload Packs
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.pack }}.zip
-          path: Packs/out
-
-      - name: Release
+      - name: Release Packs
         uses: ncipollo/release-action@v1
         with:
           artifacts: "Packs/out/${{ matrix.pack }}.zip"
