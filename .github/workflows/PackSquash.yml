@@ -20,4 +20,3 @@ jobs:
           artifact_name: ${{ matrix.pack }}
           options: |
             pack_directory = './Packs/${{ matrix.pack }}'
-            output_file_path = './Packs/out/${{ matrix.pack }}.zip'
