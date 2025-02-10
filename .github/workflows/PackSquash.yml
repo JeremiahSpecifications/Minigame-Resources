@@ -13,8 +13,8 @@ jobs:
       - name: Run PackSquash
         uses: ComunidadAylas/PackSquash-action@v4
         with:
-        packsquash_version: latest
-        artifact_name: ${{ matrix.pack }}
-        options: |
-          pack_directory = './Packs/${{ matrix.pack }}'
-          output_file_path = './Packs/out/${{ matrix.pack }}.zip'
+          packsquash_version: latest
+          artifact_name: ${{ matrix.pack }}
+          options: |
+            pack_directory = './Packs/${{ matrix.pack }}'
+            output_file_path = './Packs/out/${{ matrix.pack }}.zip'
