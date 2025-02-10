@@ -10,31 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: robinraju/release-downloader@v1.10
+      - name: Run PackSquash
+        working-directory: ./Packs
+        uses: ComunidadAylas/PackSquash-action@v4
         with:
-          repository: 'ComunidadAylas/PackSquash'
-          latest: true
-          fileName: 'PackSquash.CLI.executable.x86_64-unknown-linux-musl.zip'
-          out-file-path: 'Packs'
-
-      - name: Extract
-        working-directory: ./Packs
-        run: 7z x 'PackSquash.CLI.executable.x86_64-unknown-linux-musl.zip'
-
-      - name: CHMOD
-        working-directory: ./Packs
-        run: chmod +x packsquash
-
-      - name: Squash All Packs
-        working-directory: ./Packs
-        run: |
-          chmod +x packsquash
-          mkdir out
-          printf "pack_directory = \"%s\"\noutput_file_path = \"out/%s.zip\"" "${{ matrix.pack }}" "${{ matrix.pack }}"> packsquash-options.toml
-          ./packsquash packsquash-options.toml
-
-      - name: Upload Packs
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.pack }}
-          path: Packs/out/${{ matrix.pack }}.zip
+        packsquash_version: latest
+        artifact_name: ${{ matrix.pack }}
+        options: |
+          pack_directory = '${{ matrix.pack }}'
+          output_file_path = 'out/${{ matrix.pack }}.zip'
