@@ -46,3 +46,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "Packs/out/${{ matrix.pack }}.zip"
+          allowUpdates: true
