@@ -6,11 +6,11 @@
   "config.button.next" : "Next",
   "config.button.previous" : "Previous",
 
-  "config.lem.battle.optional_packs.name": "Allow Optional Packs",
-  "config.lem.battle.custom_pack.name" : "Custom Pack",
-  "config.lem.battle.custom_pack.desc" :"Custom Pack",
-  "config.lem.battle.safe_music.name" : "Safe Music",
-  "config.lem.battle.safe_music.desc" : "Safe Music",
+  "config.lem.base.optional_packs.name": "Allow Optional Packs",
+  "config.lem.base.custom_pack.name" : "Custom Pack",
+  "config.lem.base.custom_pack.desc" :"Custom Pack",
+  "config.lem.base.safe_music.name" : "Safe Music",
+  "config.lem.base.safe_music.desc" : "Safe Music",
 
   "config.packpolicy.reset": "Reset Optional Packs",
 
