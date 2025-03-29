@@ -8,9 +8,11 @@
 
   "config.lem.base.optional_packs.name": "Allow Optional Packs",
   "config.lem.base.custom_pack.name" : "Custom Pack",
-  "config.lem.base.custom_pack.desc" :"Custom Pack",
+  "config.lem.base.custom_pack.desc" :"",
   "config.lem.base.safe_music.name" : "Safe Music",
-  "config.lem.base.safe_music.desc" : "Safe Music",
+  "config.lem.base.safe_music.desc" : "",
+  "config.lem.base.spectator_entity.name": "Entity Type",
+  "config.lem.base.spectator_entity.desc": "",
 
   "config.packpolicy.reset": "Reset Optional Packs",
 
