@@ -45,6 +45,8 @@
   "config.lem.battle.selected_lobby.name": "Selected Lobby",
   "config.lem.battle.freeze_lobby_timer.name": "Freeze Timer",
   "config.lem.battle.lobby_timer.name": "Lobby Countdown",
+  "config.lem.battle.itemdrop_style.name": "Item Drop Style",
+  "config.lem.battle.quick_item_despawn.name": "Quick Item Despawn",
 
   "config.lem.battle.central_spawn.desc": "Should players spawn in the center at the begining of the game",
   "config.lem.battle.preferred_map_size.desc": "",
@@ -75,6 +77,8 @@
   "config.lem.battle.selected_lobby.desc": "",
   "config.lem.battle.freeze_lobby_timer.desc": "",
   "config.lem.battle.lobby_timer.desc": "",
+  "config.lem.battle.itemdrop_style.desc": "",
+  "config.lem.battle.quick_item_despawn.desc": "",
 
   "lem.menu.ui.title.achievements": "\uF000",
   "lem.advancement.config.root.name": "Client Options",
