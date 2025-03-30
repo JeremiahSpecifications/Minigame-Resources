@@ -47,6 +47,7 @@
   "config.lem.battle.lobby_timer.name": "Lobby Countdown",
   "config.lem.battle.itemdrop_style.name": "Item Drop Style",
   "config.lem.battle.quick_item_despawn.name": "Quick Item Despawn",
+  "config.lem.battle.multi_lives.name": "Multi Lives",
 
   "config.lem.battle.central_spawn.desc": "Should players spawn in the center at the begining of the game",
   "config.lem.battle.preferred_map_size.desc": "",
@@ -79,6 +80,7 @@
   "config.lem.battle.lobby_timer.desc": "",
   "config.lem.battle.itemdrop_style.desc": "",
   "config.lem.battle.quick_item_despawn.desc": "",
+  "config.lem.battle.multi_lives.desc": "",
 
   "lem.menu.ui.title.achievements": "\uF000",
   "lem.advancement.config.root.name": "Client Options",
