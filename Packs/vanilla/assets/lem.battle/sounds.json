@@ -254,8 +254,7 @@
   "sound.game.refill": {
     "category": "master",
     "sounds": [
-      "lem.battle:sounds/game/refill1",
-      "lem.battle:sounds/game/refill2"
+      "lem.battle:sounds/game/refill"
     ]
   }
 }

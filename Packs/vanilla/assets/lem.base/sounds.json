@@ -89,6 +89,12 @@
       "lem.base:sounds/game/showdown"
     ]
   },
+  "showdown.secretpowers": {
+    "category": "master",
+    "sounds": [
+      "lem.base:sounds/game/secretpowers"
+    ]
+  },
   "sound.game.die": {
     "category": "master",
     "sounds": [

@@ -458,5 +458,16 @@
   "soundCategory.music": "Mini Game Music",
   "multiplayer.player.joined": "%s connected to the game",
   "multiplayer.player.joined.renamed": "%s (formerly known as %s) connected to the game",
-  "multiplayer.player.left": "%s disconnected from the game"
+  "multiplayer.player.left": "%s disconnected from the game",
+  "block.minecraft.coal_block": "Block of Legacy Edition Coal",
+  "block.minecraft.coal_ore": "Legacy Edition Coal Ore",
+  "block.minecraft.deepslate_coal_ore": "Deepslate Legacy Edition Coal Ore",
+  "item.minecraft.charcoal": "Legacy Edition Charcoal",
+  "item.minecraft.coal": "Legacy Edition Coal",
+  "block.minecraft.iron_ore": "Not Legacy Edition Coal",
+  "block.minecraft.redstone_ore": "Not Legacy Edition Coal",
+  "block.minecraft.diamond_ore": "Not Legacy Edition Coal",
+  "block.minecraft.lapis_ore": "Not Legacy Edition Coal",
+  "block.minecraft.gold_ore": "Not Legacy Edition Coal",
+  "block.minecraft.emerald_ore": "Not Legacy Edition Coal"
 }
